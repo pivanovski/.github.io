@@ -314,6 +314,5 @@ textarea {
 }
 
 .placeholder p {
-    padding-left: 8px;
     transform: translateY(-100%);
 }
