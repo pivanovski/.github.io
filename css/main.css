@@ -313,6 +313,9 @@ textarea {
     color: #777;
 }
 
-.placeholder p {
-    transform: translateY(-100%);
+.placeholder img {
+    position: relative;
+    top: -30px;
+    width: 240px;
+    height: auto;
 }
