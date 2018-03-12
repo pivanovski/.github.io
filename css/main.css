@@ -27,13 +27,13 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    padding: 24px;
+    padding: 44px;
     background: #d9d4ce;
 }
 
 .section:nth-child(2) {
     background: #95938B;
-    color: #d9d4ce;
+    color: #3F3E2D;
 }
 
 .section:nth-child(3) {
@@ -52,7 +52,7 @@ body {
 }
 
 .contact {
-    margin-top: 50px;
+    margin-top: 44px;
     font-size: 16px;
     text-align: center;
     color: #95938B;
@@ -67,7 +67,7 @@ body {
     text-decoration: none;
     color: currentColor;
     transition: opacity 600ms ease-out;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .contact a:hover {
@@ -105,7 +105,7 @@ body {
 
 .content h2 {
     margin-bottom: 16px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Ocean';
 }
 
@@ -114,11 +114,11 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 24px;
+    padding: 44px;
     color: #d9d4ce;
     font-size: 12px;
     text-align: center;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .site-footer a {
