@@ -55,9 +55,9 @@ body {
     margin-top: 44px;
     font-size: 16px;
     text-align: center;
-    color: #95938B;
-    font-weight: 300;
-    animation: fadeIn 2000ms 1800ms backwards;
+    color: #3F3E2D;
+    font-weight: 400;
+    animation: fadeIn 2400ms 1800ms backwards;
 }
 
 .contact a {
@@ -67,11 +67,11 @@ body {
     text-decoration: none;
     color: currentColor;
     transition: opacity 600ms ease-out;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .contact a:hover {
-    opacity: 1;
+    opacity: 0.75;
 }
 
 .logo {
@@ -116,12 +116,14 @@ body {
     right: 0;
     padding: 44px;
     color: #d9d4ce;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     opacity: 0.5;
 }
 
 .site-footer a {
+    display: inline-block;
+    padding: 0 4px;
     color: currentColor;
     text-decoration: none;
 }
