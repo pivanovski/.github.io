@@ -9,6 +9,11 @@
     src: url('/fonts/Oceanshore-Bold.otf')  format('truetype');
 }
 
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('/fonts/LibreFranklin-Light.ttf')  format('truetype');
+}
+
 html {
     color: #3E3D2C;
     font-size: 1em;
@@ -51,39 +56,39 @@ body {
     color: #d9d4ce;
 }
 
-.contact {
-    margin-top: 44px;
-    font-size: 16px;
-    text-align: center;
-    color: #3F3E2D;
-    font-weight: 400;
-    animation: fadeIn 2400ms 1800ms backwards;
-}
-
-.contact a {
-    position: relative;
-    display: inline-block;
-    padding: 4px 0;
-    text-decoration: none;
-    color: currentColor;
-    transition: opacity 600ms ease-out;
-    opacity: 0.5;
-}
-
-.contact a:hover {
-    opacity: 0.75;
-}
-
 .logo {
     position: relative;
     top: -30px;
-    animation: logoIntroAnimation 1500ms 800ms backwards;
+    animation: logoIntroAnimation 1600ms 800ms backwards;
 }
 
 .logo img {
     display: block;
     width: 300px;
     height: auto;
+}
+
+.contact {
+    margin-top: 44px;
+    font-size: 14px;
+    text-align: center;
+    color: #3F3E2D;
+    font-weight: 400;
+    animation: fadeIn 2400ms 1900ms backwards;
+}
+
+.contact a {
+    position: relative;
+    display: inline-block;
+    padding: 3px 0;
+    text-decoration: none;
+    color: currentColor;
+    transition: opacity 600ms;
+    opacity: 0.5;
+}
+
+.contact a:hover {
+    opacity: 0.8;
 }
 
 .content-wrapper {
@@ -96,6 +101,11 @@ body {
 .content {
     max-width: 440px;
     text-align: center;
+    opacity: 0;
+}
+
+.content.isvisible {
+    animation: sectionAnimation 1800ms forwards;
 }
 
 .content p {
@@ -114,11 +124,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 44px;
+    padding: 32px;
     color: #d9d4ce;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
-    opacity: 0.5;
 }
 
 .site-footer a {
@@ -126,6 +135,12 @@ body {
     padding: 0 4px;
     color: currentColor;
     text-decoration: none;
+    opacity: 0.3;
+    transition: opacity 600ms;
+}
+
+.site-footer a:hover {
+    opacity: 0.6;;
 }
 
 @keyframes logoIntroAnimation {
@@ -141,6 +156,24 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0)
+    }
+}
+
+@keyframes sectionAnimation {
+    0% { 
+        opacity: 0;
+        /* transform: translateY(100px) */
+        transform: scale(0.95) translateY(100px);
+    }
+
+    20% {
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+        /* transform: translateY(0); */
+        transform: scale(1) translateY(0);
     }
 }
 
