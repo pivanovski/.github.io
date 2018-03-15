@@ -70,7 +70,7 @@ body {
 
 .contact {
     margin-top: 44px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     color: #3F3E2D;
     font-weight: 400;
@@ -124,7 +124,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 32px;
+    padding: 24px;
     color: #d9d4ce;
     font-size: 12px;
     text-align: center;
@@ -132,7 +132,7 @@ body {
 
 .site-footer a {
     display: inline-block;
-    padding: 0 4px;
+    padding: 4px;
     color: currentColor;
     text-decoration: none;
     opacity: 0.3;
