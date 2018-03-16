@@ -84,6 +84,8 @@ section:nth-child(5) {
 }
 
 article {
+    position: relative;
+    top: -32px;
     max-width: 440px;
     text-align: center;
     opacity: 0;
