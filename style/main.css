@@ -32,7 +32,7 @@ section {
     min-height: 640px;
     width: 100%;
     padding: 44px;
-    color: #3F3E2D;
+    color: #313128;
 }
 
 section:nth-child(2) {
@@ -45,7 +45,7 @@ section:nth-child(3) {
 
 section:nth-child(4) {
     background: #775e48;
-    color: #d9d4ce;
+    color: #e6e2de;
 }
 
 section:nth-child(5) {
