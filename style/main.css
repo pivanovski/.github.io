@@ -19,6 +19,10 @@ html {
     color: #3E3D2C;
 }
 
+body {
+    background: #d9d4ce;
+}
+
 section {
     position: relative;
     display: flex;
@@ -28,7 +32,6 @@ section {
     min-height: 640px;
     width: 100%;
     padding: 44px;
-    background: #d9d4ce;
     color: #3F3E2D;
 }
 
