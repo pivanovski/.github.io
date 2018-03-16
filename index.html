@@ -15,97 +15,52 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3f3e2c">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#f3f3f3">
-
-    <style>*{margin:0;padding:0;box-sizing:border-box}@font-face{font-family:'Ocean';src:url(/fonts/Oceanshore-Bold.otf) format("truetype")}@font-face{font-family:'Libre Franklin';src:url(/fonts/LibreFranklin-Light.ttf) format("truetype")}html{color:#3E3D2C;font-size:1em;line-height:1.4;font-family:'Libre Franklin',sans-serif}body{background:#d9d4ce}.section{position:relative;display:flex;justify-content:center;align-items:center;height:100vh;width:100%;padding:44px;background:#d9d4ce}.section:nth-child(2){background:#95938B;color:#3F3E2D}.section:nth-child(3){background:#d7ccb3;color:#3F3E2D}.section:nth-child(4){background:#775e48;color:#d9d4ce}.section:nth-child(5){background:#3f3e2d;color:#d9d4ce}.logo{position:relative;top:-30px;animation:logoIntroAnimation 1600ms 800ms backwards}.logo img{display:block;width:300px;height:auto}.contact{margin-top:44px;font-size:16px;text-align:center;color:#3F3E2D;font-weight:400;animation:fadeIn 2400ms 1900ms backwards}.contact a{position:relative;display:inline-block;padding:4px 0;text-decoration:none;color:currentColor;transition:opacity 600ms;opacity:.8}.contact a:hover{opacity:1}.content-wrapper{display:flex;align-items:center;height:100vh;padding-left:48px}.content{max-width:440px;text-align:center;opacity:0}.content.isvisible{animation:sectionAnimation 1800ms forwards}.content p{font-weight:300;line-height:1.8}.content h2{margin-bottom:16px;font-size:2rem;font-family:'Ocean'}.site-footer{position:absolute;bottom:0;left:0;right:0;padding:24px;color:#d9d4ce;font-size:12px;text-align:center}.site-footer a{display:inline-block;padding:4px;color:currentColor;text-decoration:none;opacity:.3;transition:opacity 600ms}.site-footer a:hover{opacity:.6}@keyframes logoIntroAnimation{0%{opacity:0;transform:translateY(-40px)}20%{opacity:0}100%{opacity:1;transform:translateY(0)}}@keyframes sectionAnimation{0%{opacity:0;transform:scale(0.95) translateY(100px)}20%{opacity:0}100%{opacity:1;transform:scale(1) translateY(0)}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}</style>
+    <style>*{margin:0;padding:0;box-sizing:border-box}@font-face{font-family:Ocean;src:url(/fonts/Oceanshore-Bold.otf) format("truetype")}@font-face{font-family:Libre Franklin;src:url(/fonts/LibreFranklin-Light.ttf) format("truetype")}html{font:1em/1.4 Libre Franklin,sans-serif;color:#3e3d2c}section{position:relative;display:flex;justify-content:center;align-items:center;height:100vh;min-height:640px;width:100%;padding:44px;background:#d9d4ce;color:#3f3e2d}section:nth-child(2){background:#95938b}section:nth-child(3){background:#d7ccb3}section:nth-child(4){background:#775e48;color:#d9d4ce}section:nth-child(5){background:#3f3e2d;color:#d9d4ce}.hero{position:relative;top:-32px;display:flex;flex-direction:column;align-items:center;animation:a 1.6s .8s backwards}.hero img{display:block;height:auto;width:300px;margin-bottom:32px}.hero a{display:inline-block;padding:4px 0;text-decoration:none;color:#3f3e2d;opacity:.8;transition:opacity .6s;animation:c 2.4s 1.9s backwards}.hero a:hover{opacity:.9}article{max-width:440px;text-align:center;opacity:0}article.isvisible{animation:b 1.8s forwards}article p{line-height:1.8}article h2{margin-bottom:16px;font-size:2rem;font-family:Ocean}footer{position:absolute;bottom:0;left:0;right:0;padding:24px;font-size:12px;text-align:center}footer a{display:inline-block;padding:5px;color:#d9d4ce;text-decoration:none;opacity:.3;transition:opacity .6s}footer a:hover{opacity:.6}@keyframes a{0%{opacity:0;transform:translateY(-40px)}20%{opacity:0}to{opacity:1;transform:translateY(0)}}@keyframes b{0%{opacity:0;transform:scale(.95) translateY(100px)}20%{opacity:0}to{opacity:1;transform:scale(1) translateY(0)}}@keyframes c{0%{opacity:0}to{opacity:.8}}</style>
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-    
-    <div class="section">
-        <div class="logo">
-            <img src="img/logo.png" alt="">
-            <div class="contact">
-                <div>
-                    <a href="https://goo.gl/maps/S7knbZ7YgxH2">Vasagatan 40, Göteborg</a>
-                </div>
-                <div>
-                    <a href="tel:0317741925">031 - 774 19 25</a>
-                </div>
-                <div>
-                    <a href="mailto:eat@gardengbg.se">eat@gardengbg.se</a>
-                </div>
-                
-            </div>
+    <section>
+        <div class="hero">
+            <img src="img/logo.png" alt="Gården Logo">
+            <a href="https://goo.gl/maps/S7knbZ7YgxH2">Vasagatan 40, Göteborg</a>
+            <a href="tel:0317741925">031 - 774 19 25</a>
+            <a href="mailto:eat@gardengbg.se">eat@gardengbg.se</a>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <div class="content">
+    <section>
+        <article>
             <h2>Food</h2>
             <p>The food at Gården reflects where we are, and changes throughout the year to mirror the seasons. We work with locally sourced ingredients as far as possible, from around Gothenburg, our archipelago and Bohuslän. When nature allows, we also forage ingredients from our surroundings. We strive to prepare dishes that will make our guests connect with our region and our methods of cooking.</p>
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <div class="section">
-        <div class="content">
+    <section>
+        <article>
             <h2>Coffee</h2>
             <p>The coffee at Gården is sourced from Koppi Coffee Roasters in Helsingborg. Anne and Charles at Koppi travel the world all year to make sure they can provide the coffee that is best for that period of time, working with the seasons and passionate coffee farmers. After the beans are brought home, they are skillfully roasted and taken care of.</p>
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <div class="section">
-        <div class="content">
+    <section>
+        <article>
             <h2>Wine</h2>
             <p>All our wines are natural wines. This means that the winemaker interferes as little as possible with the process of making the wine - from soil to finished product. No pesticides are used on the plants, nothing is added to the wine. Simply put, it is naturally fermented grape juice without additives.</p>
-        </div>
-    </div>
-    <div class="section">
-        <div class="content">
+        </article>
+    </section>
+    <section>
+        <article>
             <h2>Philosophy</h2>
             <p>We work with producers and farmers that we care about, that we know are as passionate about what they do as we are. We strive to cook natural food from the region we are in, using ingredients at the peak of their time. Our menu can change whenever, it all depends on what products and ingredients are best for the time being, and what we feel like serving.</p>
-        </div>
-        <footer class="site-footer">
+        </article>
+        <footer>
             <a href="https://goo.gl/maps/S7knbZ7YgxH2">Vasagatan 40, 411 37, Göteborg</a>
             <a href="tel:0317741925">031 - 774 19 25</a>
             <a href="mailto:eat@gardengbg.se">eat@gardengbg.se</a>
         </footer>
-    </div>
+    </section>
 
-    <script>
-        (function() {
-            var sections = document.querySelectorAll('.content'),
-                ticking = false;
-
-            window.addEventListener('scroll', function(e) {
-                if (!ticking) {
-                    window.requestAnimationFrame(function() {
-                        checkIfInView();
-                        ticking = false;
-                    });
-                    
-                    ticking = true;
-                }
-            });
-
-            function checkIfInView() {
-                sections.forEach(function(section) {
-                    if (section.classList.contains('isvisible')) return;
-
-                    if (isElementInViewport(section)) {
-                        section.classList.add('isvisible');
-                    }
-                });
-            }
-
-            function isElementInViewport(el) {
-                var rect = el.getBoundingClientRect();
-                return rect.top + 140 < window.innerHeight;
-            }
-        })()
-    </script>
+    <script>(function(){var articles=document.querySelectorAll("article"),ticking=false;window.addEventListener("scroll",function(e){if(!ticking){window.requestAnimationFrame(function(){checkIfInView();ticking=false});ticking=true}});function checkIfInView(){articles.forEach(function(article){if(article.classList.contains("isvisible"))return;if(isElementInViewport(article)){article.classList.add("isvisible")}})}function isElementInViewport(el){var rect=el.getBoundingClientRect();return rect.top+140<window.innerHeight}})();</script>
 </body>
 
 </html>
