@@ -12,6 +12,14 @@
 @font-face {
     font-family: 'Libre Franklin';
     src: url('/fonts/LibreFranklin-Light.ttf')  format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('/fonts/LibreFranklin-LightItalic.ttf')  format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 html {
@@ -69,7 +77,8 @@ section:nth-child(5) {
     margin-bottom: 32px;
 }
 
-.hero a {
+.hero a,
+.hero p {
     display: inline-block;
     padding: 4px 0;
     text-decoration: none;
@@ -77,6 +86,26 @@ section:nth-child(5) {
     opacity: 0.8;
     transition: opacity 600ms;
     animation: fadeIn 2400ms 1900ms backwards;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 12px 12px 10px;
+    background: #313128;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #d9d4ce;
+}
+
+.hero p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.hero p > span {
+    margin-left: 2px;
 }
 
 .hero a:hover {
