@@ -13,7 +13,7 @@
         }
     });
 
-    function checkIfInView() 
+    function checkIfInView() {
         Array.prototype.forEach.call(articles, function(article) {
             if (article.classList.contains('isvisible')) return;
 
