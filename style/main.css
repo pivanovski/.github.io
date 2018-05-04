@@ -150,6 +150,10 @@ article {
     opacity: 0;
 }
 
+.no-requestanimationframe article {
+    opacity: 1;
+}
+
 article.isvisible {
     animation: sectionAnimation 1800ms forwards;
 }
