@@ -13,13 +13,13 @@
         }
     });
 
-    function checkIfInView() {
-        articles.forEach(function(article) {
+    function checkIfInView() 
+        Array.prototype.forEach.call(articles, function(article) {
             if (article.classList.contains('isvisible')) return;
 
             if (isElementInViewport(article)) {
                 article.classList.add('isvisible');
-            }
+            }     
         });
     }
 
